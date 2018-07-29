@@ -1,0 +1,34 @@
+.Detailed
+{
+    color: black;
+    text-align: left;
+    padding:20px;
+    text-justify: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:large;
+    border:1px solid black;
+    height:320px;
+    width:370px;
+    background-color:bisque;   
+    position: relative;
+    left: 40px;
+    bottom: -50px;
+    float: right;
+    clear: right;
+    margin:10px;
+}
+
+.para{
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size:large;
+}
+
+.buttonSubmit
+{
+    font-size: large;
+    margin:10px;
+    position: relative;
+    left: 120px;
+    bottom: -20px;
+}

@@ -1,0 +1,28 @@
+header{
+    padding:5%;
+    font-family: cursive;
+    font-size: x-large;
+    font-weight:bolder;
+    padding-bottom: 0;
+}
+
+.div 
+{
+    color:brown;
+    text-align: left;
+    padding:20px;
+    text-justify: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:large;
+    border:1px solid black;
+    height:180px;
+    width:300px;
+    background-color:antiquewhite;   
+    position: relative;
+    left: 40px;
+    bottom: -50px;
+    float: left;
+    clear: right;
+    margin:10px;
+}
+
