@@ -116,15 +116,28 @@ handleTelephoneChange = (event) => {
 }
 
 ChangeHandler = (event) => {
- 
-console.log("Id:" +this.state.Id);
-console.log("Name:" +this.state.Name);
-console.log("Age"+ this.state.Age);
-console.log("Lane:" + this.state.Lane);
-console.log("City: " +this.state.City);
-console.log("State:" +this.state.State);
-console.log("Email Address:" +this.state.Email);
-console.log("Telephone:" + this.state.Telephone);
+  var x = {
+    id: this.state.Id,
+      name:this.state.Name,
+      Age:this.state.Age,
+      address : {
+      lane: this.state.Lane,
+      city:this.state.City,
+      state:this.state.State
+                },
+      EmailAddress:this.state.Email,
+      Telephone:this.state.Telephone
+ }
+ console.log(x);
+ this.setState({data : x})
+// console.log("Id:" +this.state.Id);
+// console.log("Name:" +this.state.Name);
+// console.log("Age"+ this.state.Age);
+// console.log("Lane:" + this.state.Lane);
+// console.log("City: " +this.state.City);
+// console.log("State:" +this.state.State);
+// console.log("Email Address:" +this.state.Email);
+// console.log("Telephone:" + this.state.Telephone);
 }
 
  render() {
@@ -150,9 +163,12 @@ console.log("Telephone:" + this.state.Telephone);
         }
       
         </div>
-         <DetailedComponent Id={this.handleIdChange} Name={this.state.Name} ChangeHandler={this.ChangeHandler}/>
+        <DetailedComponent handleIdChange={this.handleIdChange} handleNameChange={this.handleNameChange}
+        handleAgeChange={this.handleAgeChange} handleLaneChange={this.handleLaneChange} handleCityChange={this.handleCityChange}
+        handleStateChange={this.handleStateChange} handleEmailChange={this.handleEmailChange} handleTelephoneChange={this.handleTelephoneChange}
+        />
          <div>
-         <button type="submit" className="buttonSubmit" onClick={this.ChangeHandler} Id={this.state.Id}> Add Value </button>
+         <button className="buttonSubmit" onClick={this.ChangeHandler} > Add Value </button>
          </div>
       </div>
     );
